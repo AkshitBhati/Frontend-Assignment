@@ -5,9 +5,8 @@ body{
 .signIn{
     border: 1px solid #fff;
     width: 30%;
-
     margin: auto;
-    margin-top: 25px;
+    margin-top: 10px;
     background-color: #fff;
     border-radius: 10px;
     font-family: Roboto;
@@ -67,6 +66,9 @@ input{
     font-size: 20px;
 }
 .form__btn--social{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin-left: 15px;
     margin-top: 17px;
@@ -78,4 +80,26 @@ input{
     border-radius: 4px;
     font-size: 16px;
 
+}
+
+.formBtn__logo{
+    font-size: 25px;
+    margin-right: 8px;
+}
+.signIn__conditions{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    text-align: center;
+    color: #888888;
+}
+.signIn__conditions span{
+    color: #616161;
+    text-decoration: underline;
+}
+
+@media (max-width:800px){
+    .signIn{
+        width: 90%;
+    }
 }
