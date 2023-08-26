@@ -3,7 +3,9 @@ import "./NavAuth.css"
 
 const NavAuth = () => {
   return (
-    <div>NavAuth</div>
+    <header>
+      <h1 className='navAuth__heading'>Learn<span>Prep</span></h1>
+    </header>
   )
 }
 

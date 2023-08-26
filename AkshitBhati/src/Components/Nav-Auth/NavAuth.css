@@ -1,0 +1,12 @@
+.navAuth__heading{
+    font-family: Poppins;
+    font-size: 30px;
+    line-height: 60px;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+.navAuth__heading span{
+    color: #000AFF;
+}
