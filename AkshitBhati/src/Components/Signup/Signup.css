@@ -1,0 +1,130 @@
+body{
+    background: #F0F1FF;
+    height: 120vh;
+}
+.signUp{
+    border: 1px solid #fff;
+    width: 32%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Roboto;
+}
+.signUp__heading{
+    margin-left: 15px;
+    margin-top: 10px;   
+    font-weight: 400;
+}
+.signUp__message{
+    margin-top: 25px;
+    margin-left: 15px;
+    font-weight: 400;
+    color: #616161;
+    font-size: 15px;
+}
+.signUp__message span{
+    color: #4A51FA;
+    text-decoration: underline;
+}
+.signup__name--container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.singUp__name{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.singUp__name label{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: #909090;
+    font-size: 13px;
+}
+.signUp__fname, .signUp__lname {
+    padding: 4px;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    width: 84%;
+    outline: none;
+    margin-top: 4px;
+    margin-left: 15px;
+}
+.form__email{
+    margin-top: 20px;
+}
+.signUp label{
+    margin-left: 15px;
+    color: #909090;
+    font-size: 12px;
+}
+.form__email input{
+    margin-left: 15px;
+    padding: 4px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #D2D2D2;
+    outline: none;
+    font-size: 14px;
+    color: #616161;
+}
+.form__jobRole{
+    margin-top: 30px;
+}
+
+.form__jobRole select{
+    color: #616161;
+    margin-left: 15px;
+    margin-top: 4px;
+    padding: 4px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #D2D2D2;
+    outline: none;
+    background-color: #fff;
+}
+.form__password{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.form__password input{
+    margin-left: 15px;
+    padding: 4px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #D2D2D2;
+    outline: none;
+    color: #888888;
+    
+}
+.signUp .form__btn{
+    margin-top: 50px;
+}
+.signUp .signIn__conditions{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:600px){
+    .signUp{
+        width: 90%;
+        margin-top: 20px;
+    }
+    
+}
+@media (min-width: 600px) and (max-width: 800px) {
+    .signUp{
+        width: 60%;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    .signUp{
+        width: 50%;
+        margin-top: 20px;
+    }
+}

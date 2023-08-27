@@ -32,13 +32,13 @@ form{
     display: flex;
     flex-direction: column;
 }
-label{
+.signIn label{
     margin-top: 20px;
     margin-left: 15px;
     color: #909090;
     font-size: 12px;
 }
-input{
+.signIn input{
     margin-left: 15px;
     padding: 7px;
     width: 90%;
@@ -72,7 +72,7 @@ input{
     width: 90%;
     margin-left: 15px;
     margin-top: 14px;
-    padding: 7px;
+    padding: 5px;
     color: #888888;
     background-color: #FFFFFF;
     border: 1px solid #B6B6B6;
