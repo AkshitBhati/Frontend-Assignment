@@ -3,14 +3,14 @@
   ul {
     list-style: none;
   }
-  .container {
+  .nav__container {
     background-color: #fff;
   }
-  .row {
+  .nav__row {
     width: 80%;
     margin: auto;
   }
-  .logo {
+  .nav__logo {
     font-size: 1.5rem;
     
   }
@@ -30,7 +30,7 @@
   li a:hover {
     background-color: blue;
   }
-  .menu-btn {
+  .nav__menu-btn {
     display: none;
   }
   .section {

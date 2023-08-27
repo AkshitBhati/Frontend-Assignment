@@ -10,13 +10,13 @@ const LandingNavbar = () => {
   };
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="menu-btn" onClick={toggleMenu}>
+    <div className="nav__container">
+      <div className="nav__row">
+        <div className="nav__menu-btn" onClick={toggleMenu}>
           <AiOutlineMenu />
         </div>
         <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
-          <div className="logo">
+          <div className="nav__logo">
             <h1>Learn<span>Prep</span></h1>
           </div>
           <ul className="main-menu">
