@@ -1,17 +1,34 @@
-import React from 'react'
-import "./Navbar.css"
+import React, { useState } from 'react'
+import { AiOutlineMenu } from "react-icons/ai"
+import './LandingNavbar.css'
 
-const Navbar = () => {
+const LandingNavbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className='nav'>
-        <h1 className='nav__heading'>Learn<span >Prep</span></h1>
-        <div className='nav__menu'>
-          <p>About us</p>
-          <p>Pricing</p>
-          <p>Demo</p>
+    <div className="container">
+      <div className="row">
+        <div className="menu-btn" onClick={toggleMenu}>
+          <AiOutlineMenu />
         </div>
+        <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
+          <div className="logo">
+            <h1>Learn<span>Prep</span></h1>
+          </div>
+          <ul className="main-menu">
+            <li className="list-items">About</li>
+            <li className="list-items">Services</li>
+            <li className="list-items">Contact</li>
+           
+          </ul>
+        </nav>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default LandingNavbar;

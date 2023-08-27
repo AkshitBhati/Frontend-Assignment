@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import LandingPage from './Pages/LandingPage'
 import AuthNavbar from './Components/AuthNav/NavAuth'
 import LandingNavbar from './Components/LandingNav/LandingNavbar'
 import SignIn from './Components/SignIn/SignIn'
 import Signup from './Components/Signup/Signup'
 import PersonalDetails from './Components/PersonaDetails/PersonalDetails'
+import LandingPage from './Components/LandingPage/LandingPage'
 
 const App = () => {
 

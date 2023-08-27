@@ -2,6 +2,7 @@ body{
     background: #F0F1FF;
     height: 120vh;
 }
+
 .pdetails{
     border: 1px solid #fff;
     width: 32%;
@@ -85,7 +86,7 @@ body{
 .pdetails__radio span{
     font-size: 14px;
     color: #909090;
-    transform: translate(10%, -10%);
+    transform: translate(10%, -15%);
     white-space: nowrap;
 }
 .pdetails__conditions{
