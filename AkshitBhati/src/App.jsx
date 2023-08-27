@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import LandingPage from './Pages/LandingPage'
-import AuthNavbar from './Components/Nav-Auth/NavAuth'
-import LandingNavbar from './Components/Navbar/LandingNavbar'
+import AuthNavbar from './Components/AuthNav/NavAuth'
+import LandingNavbar from './Components/LandingNav/LandingNavbar'
 import SignIn from './Components/SignIn/SignIn'
 
 const App = () => {

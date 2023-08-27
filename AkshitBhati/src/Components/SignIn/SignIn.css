@@ -19,10 +19,9 @@ body{
 .signIn__message{
     margin-top: 15px;
     margin-left: 15px;
-    font-size: 15px;
     font-weight: 400;
     color: #616161;
-    font-size: 18px;
+    font-size: 15px;
 }
 .signIn__message span{
     color: #4A51FA;
@@ -37,7 +36,7 @@ label{
     margin-top: 20px;
     margin-left: 15px;
     color: #909090;
-    font-size: 13px;
+    font-size: 12px;
 }
 input{
     margin-left: 15px;
@@ -71,7 +70,7 @@ input{
     align-items: center;
     width: 90%;
     margin-left: 15px;
-    margin-top: 17px;
+    margin-top: 14px;
     padding: 7px;
     color: #888888;
     background-color: #FFFFFF;
@@ -88,7 +87,7 @@ input{
 }
 .signIn__conditions{
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-size: 12px;
     text-align: center;
     color: #888888;
