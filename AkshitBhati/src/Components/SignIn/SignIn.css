@@ -17,11 +17,11 @@ body{
     font-weight: 400;
 }
 .signIn__message{
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 15px;
     font-weight: 400;
     color: #616161;
-    font-size: 15px;
+    font-size: 17px;
 }
 .signIn__message span{
     color: #4A51FA;
@@ -33,11 +33,12 @@ form{
     flex-direction: column;
 }
 .signIn label{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 15px;
     color: #909090;
-    font-size: 12px;
+    font-size: 14px;
 }
+
 .signIn input{
     margin-left: 15px;
     padding: 7px;
@@ -49,7 +50,7 @@ form{
 .form__btn{
     width: 90%;
     margin-left: 15px;
-    margin-top: 17px;
+    margin-top: 22px;
     padding: 7px;
     color: #fff;
     background-color: #000AFF;
@@ -61,7 +62,7 @@ form{
 }
 .form__or{
     text-align: center;
-    margin-top: 7px;
+    margin-top: 10px;
     color: #888888;
     font-size: 20px;
 }
@@ -82,14 +83,20 @@ form{
     cursor: pointer;
 }
 
+.google{
+    margin-left: -20px;
+}
+.linkedin{
+    margin-left: -10px;
+}
 .formBtn__logo{
     font-size: 25px;
     margin-right: 8px;
 }
 .signIn__conditions{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 25px;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     color: #888888;
 }

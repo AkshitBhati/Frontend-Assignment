@@ -26,11 +26,11 @@ const SignIn = () => {
             </div>
 
             <div className='form__btn--social'>
-            <PiGoogleLogoThin className='formBtn__logo'/>
-            <p>Continue with Google</p>
+            <PiGoogleLogoThin className='formBtn__logo google'/>
+            <p className='formBtn__text'>Continue with Google</p>
             </div>
             <div className='form__btn--social'>
-            <PiLinkedinLogo className='formBtn__logo'/>
+            <PiLinkedinLogo className='formBtn__logo linkedin'/>
             <p>Continue with Linkedin</p>
             </div>
             

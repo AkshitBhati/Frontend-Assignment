@@ -6,7 +6,7 @@ const Signup = () => {
   return (
     <div className='signUp'>
         <h1 className='signUp__heading'>Sign Up</h1>
-        <p className='signUp__message'>New to LeanPrep? <span>Login</span></p>
+        <p className='signUp__message'>Already a member? <span>Login</span></p>
         <form >
             <div className="signup__name--container">
                 <div className='singUp__name'>
@@ -38,7 +38,7 @@ const Signup = () => {
                 <input type="password" name="" id="" />
             </div>
 
-            <button className='form__btn'>Continue</button>
+            <button className='form__btn'>Next</button>
             <p className='form__or'>or</p>
             
             <div className='form__btn--social'>
