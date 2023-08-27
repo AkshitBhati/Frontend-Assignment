@@ -1,0 +1,30 @@
+body{
+    background: #F0F1FF;
+    height: 120vh;
+}
+.pdetails{
+    border: 1px solid #fff;
+    width: 32%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Roboto;
+}
+.pdetails__heading{
+    margin-left: 15px;
+    margin-top: 15px;   
+    font-weight: 400;
+}
+.pdetails__message{
+    margin-top: 25px;
+    margin-left: 15px;
+    font-weight: 400;
+    color: #616161;
+    font-size: 14px;
+
+}
+.pdetails__lang{
+    display: flex;
+    flex-direction: column;
+}
