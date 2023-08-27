@@ -4,6 +4,7 @@ import LandingPage from './Pages/LandingPage'
 import AuthNavbar from './Components/AuthNav/NavAuth'
 import LandingNavbar from './Components/LandingNav/LandingNavbar'
 import SignIn from './Components/SignIn/SignIn'
+import Signup from './Components/Signup/Signup'
 
 const App = () => {
   // STATE FOR CONDITIONAL RENDERING OF NAVBAR
@@ -21,6 +22,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/auth/signin" element={<SignIn />} />
+        <Route path="/auth/signin" element={<Signup />} />
       </Routes>
     </Router>
   )

@@ -6,6 +6,7 @@ import { PiLinkedinLogo } from "react-icons/pi"
 
 
 const SignIn = () => {
+  
   return (
     <div className='signIn'>
         <h1 className='signIn__heading'>Sign in</h1>

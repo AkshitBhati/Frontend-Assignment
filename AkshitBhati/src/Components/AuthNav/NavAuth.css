@@ -10,3 +10,10 @@
 .navAuth__heading span{
     color: #000AFF;
 }
+
+@media (max-width:600px){
+    .navAuth__heading{
+        text-align: center;
+        margin-left: -20px;
+    }
+}
