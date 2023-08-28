@@ -1,7 +1,13 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom"
 import "./LandingPage.css"
 
 const LandingPage = () => {
+  //FUNCTION FOR NAVIGATION
+  const navigate = useNavigate()
+  const loginHandler = () => {
+    navigate("/auth/signup")
+  }
   return (
     <>
     <div className='landing'>
@@ -12,7 +18,7 @@ const LandingPage = () => {
         <p className="landing__para">Welcome to <span>LeanPrep</span>! The ultimate destination for honing your interview skills. Whether you're a fresh graduate, career changer, or seasoned professional, we've got you covered. Our <span>comprehensive library</span> of mock interview questions and <span>expert tips</span> will help you <span>ace any job interview.</span> </p>
      
         <button className='landing__btn'>Join Our Program</button>
-        <p className='landing__message'>Already a member? <span>Login</span></p>
+        <p className='landing__message'>Already a member? <span onClick={loginHandler}>Login</span></p>
       </div>
       <div className='landing__vector--blob'>
         <div className="landing__blob--svg"></div>

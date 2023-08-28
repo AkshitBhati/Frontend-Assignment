@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { BsCameraVideo } from "react-icons/bs"
+import { useNavigate } from 'react-router-dom'
 import "./LandingNavbar.css"
 
 const LandingNavbar = () => {
@@ -11,7 +12,11 @@ const LandingNavbar = () => {
     setActive(!active)
     console.log("hey")
   }
-
+  //FUNCTION FOR NAVIGATION
+  const navigate = useNavigate()
+  const homeHandler = () => {
+    navigate("/")
+  }
   return (
     <div className="container">
   <div className="row">
@@ -21,7 +26,7 @@ const LandingNavbar = () => {
     <nav className="navbar">
       <div >
 
-        <h1 className="nav__heading">Learn<span>Prep</span></h1>
+        <h1 className="nav__heading" onClick={homeHandler}>Learn<span>Prep</span></h1>
       </div>
       <ul className={`main-menu ${active && 'show'}`}>
         <li className="list-items">About us</li>

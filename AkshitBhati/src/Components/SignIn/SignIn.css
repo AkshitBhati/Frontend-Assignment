@@ -29,6 +29,7 @@
 .signIn__message span{
     color: #4A51FA;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 form{

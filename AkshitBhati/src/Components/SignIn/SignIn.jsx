@@ -3,15 +3,22 @@ import "./SignIn.css"
 import { PiFacebookLogo } from "react-icons/pi"
 import { PiGoogleLogoThin } from "react-icons/pi"
 import { PiLinkedinLogo } from "react-icons/pi"
+import { useNavigate } from 'react-router-dom'
 
 
 const SignIn = () => {
+   //FUNCTION FOR NAVIGATION
+   const navigate = useNavigate()
   
+   const signupHandler = (e) => {
+     
+     navigate("/auth/signup")
+   }
   return (
     <div className="signIn__wrapper">
     <div className='signIn'>
         <h1 className='signIn__heading'>Sign in</h1>
-        <p className='signIn__message'>New to LeanPrep? <span>Signup</span></p>
+        <p className='signIn__message'>New to LeanPrep? <span onClick={signupHandler}>Signup</span></p>
 
         <form >
             <label >Email Address</label>

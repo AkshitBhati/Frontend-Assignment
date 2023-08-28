@@ -1,13 +1,26 @@
 import React from 'react'
 import { PiLinkedinLogo } from 'react-icons/pi'
+import { useNavigate } from 'react-router-dom'
 import "./Signup.css"
 
 const Signup = () => {
+    //FUNCTION FOR NAVIGATION
+  const navigate = useNavigate()
+  
+  const personalDetailsHandler = (e) => {
+    e.preventDefault()
+    navigate("/auth/personaldetails")
+  }
+
+  const loginHandler = () => {
+    navigate("/auth/signin")
+  }
+
   return (
     <div className='signUp__wrapper'>
     <div className='signUp'>
         <h1 className='signUp__heading'>Sign Up</h1>
-        <p className='signUp__message'>Already a member? <span>Login</span></p>
+        <p className='signUp__message'>Already a member? <span onClick={loginHandler}>Login</span></p>
         <form >
             <div className="signup__name--container">
                 <div className='singUp__name'>
@@ -39,7 +52,7 @@ const Signup = () => {
                 <input type="password" name="" id="" />
             </div>
 
-            <button className='form__btn'>Next</button>
+            <button className='form__btn' onClick={personalDetailsHandler}>Next</button>
             <p className='form__or'>or</p>
             
             <div className='form__btn--social'>
