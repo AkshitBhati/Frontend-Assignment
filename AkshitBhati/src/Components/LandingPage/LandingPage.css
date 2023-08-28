@@ -1,9 +1,85 @@
+.landing{
+    overflow: hidden;
+}
 .landing__vector{
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-    margin-top: 30px;
-    margin-left: 50px;
-    filter: drop-shadow(10px 20px 5px #6A70FC);
-    border-radius: 50%;
+position: absolute;
+left: 3.82%;
+right: 78.06%;
+top: 19.53%;
+bottom: 63.09%;
+background: #6A70FC;
+filter: blur(75px);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.landing__text--container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.landing__text{
+    color: #434343;
+    font: 400 37px Poppins;
+}
+
+.landing__text  span{
+    color: #000000;
+    font-family: 600;
+}
+.landing__para{
+    margin-top: 40px;
+    color: #616161;
+    font-size: 18px;
+}
+.landing__para span{
+    color: #000000;
+}
+.landing__btn{
+    margin-top: 60px;
+    padding: 5px 40px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #000AFF;
+    background-color: #000AFF;
+    color: #fff;
+    border-radius: 10px;
+}
+.landing__message{
+    margin-top: 10px;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 13px;
+}
+.landing__message span{
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+.landing__vector--blob{
+/* blob (1) 1 */
+
+position: absolute;
+width: 786px;
+height: 786px;
+left: 886px;
+top: 631px;
+
+filter: blur(150px);
+
+
+/* Vector */
+
+position: absolute;
+left: 85.2%;
+right: 12.64%;
+top: 78.38%;
+bottom: 18.33%;
+
+background: #000AFF;
+overflow: hidden;
+
 }

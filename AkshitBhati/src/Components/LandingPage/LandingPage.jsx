@@ -3,22 +3,24 @@ import "./LandingPage.css"
 
 const LandingPage = () => {
   return (
+    <>
     <div className='landing'>
-      <svg width="493" height="478" viewBox="0 0 493 478" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_f_2_241)">
-        <path d="M147.622 165.295C125.362 167.008 88.6689 174.593 82.7981 188.049C77.1718 201.75 102.368 220.834 124.628 254.597C146.888 288.116 165.969 336.315 175.754 326.773C185.538 317.231 185.783 250.193 222.965 216.43C260.392 182.911 334.756 182.666 342.339 174.837C349.923 167.253 290.48 151.839 253.053 150.126C215.871 148.658 200.46 160.402 188.963 164.317C177.466 167.987 169.883 163.583 147.622 165.295Z" fill="#6A70FC"/>
-        </g>
-        <defs>
-        <filter id="filter0_f_2_241" x="-68" y="0" width="561" height="478" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-        <feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_2_241"/>
-        </filter>
-        </defs>
-      </svg>
-
+      <div className='landing__vector'></div>
+      <div className="landing__text--container">
+        <h1 className="landing__text">Don't let nerves get the best of you –<br /><span>practice makes perfect! </span></h1>
+      
+        <p className="landing__para">Welcome to <span>LeanPrep</span>! The ultimate destination for honing your interview skills. Whether you're a fresh graduate, career changer, or seasoned professional, we've got you covered. Our <span>comprehensive library</span> of mock interview questions and <span>expert tips</span> will help you <span>ace any job interview.</span> </p>
+     
+        <button className='landing__btn'>Join Our Program</button>
+        <p className='landing__message'>Already a member? <span>Login</span></p>
+      </div>
+      <div className='landing__vector--blob'>
+        <div className="landing__blob--svg"></div>
+      </div>
     </div>
+    </>
   )
 }
+
 
 export default LandingPage
