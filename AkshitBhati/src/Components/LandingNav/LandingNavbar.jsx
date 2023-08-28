@@ -1,34 +1,40 @@
 import React, { useState } from 'react'
-import { AiOutlineMenu } from "react-icons/ai"
-import './LandingNavbar.css'
+import { BsCameraVideo } from "react-icons/bs"
+import "./LandingNavbar.css"
 
 const LandingNavbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  //STATE FOR DISPLAYING THE MOBILE-RESPONSIVE NAVBAR 
+  const [active, setActive] = useState(false)
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  //FUNCTION FOR DISPLAYING THE NAV-ITEMS IN MOBILE 
+  const handleShowNavbar = () => {
+    setActive(!active)
+    console.log("hey")
+  }
 
   return (
-    <div className="nav__container">
-      <div className="nav__row">
-        <div className="nav__menu-btn" onClick={toggleMenu}>
-          <AiOutlineMenu />
-        </div>
-        <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
-          <div className="nav__logo">
-            <h1>Learn<span>Prep</span></h1>
-          </div>
-          <ul className="main-menu">
-            <li className="list-items">About</li>
-            <li className="list-items">Services</li>
-            <li className="list-items">Contact</li>
-           
-          </ul>
-        </nav>
-      </div>
+    <div className="container">
+  <div className="row">
+    <div className="menu-btn" onClick={handleShowNavbar}>
+      <i className="fa-solid fa-bars"></i>
     </div>
-  );
-};
+    <nav className="navbar">
+      <div >
 
-export default LandingNavbar;
+        <h1 className="nav__heading">Learn<span>Prep</span></h1>
+      </div>
+      <ul className={`main-menu ${active && 'show'}`}>
+        <li className="list-items">About us</li>
+        <li className="list-items">Pricing</li>
+        <li className="list-items demo">Demo <span><BsCameraVideo className='demo-logo'/></span></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+</div>
+
+  )
+}
+
+export default LandingNavbar

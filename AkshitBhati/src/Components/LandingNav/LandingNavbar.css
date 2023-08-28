@@ -1,90 +1,92 @@
 
 
-  ul {
-    list-style: none;
-  }
-  .nav__container {
-    background-color: #fff;
-  }
-  .nav__row {
-    width: 80%;
-    margin: auto;
-  }
-  .nav__logo {
-    font-size: 1.5rem;
-    
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    align-items: center;
-  }
-  .navbar .main-menu {
-    display: flex;
-  }
-  .main-menu li  {
-    display: inline-block;
-    padding: 10px 20px;
-  }
-  li a:hover {
-    background-color: blue;
-  }
-  .nav__menu-btn {
+ul {
+  list-style: none;
+}
+.container {
+  background-color: #fff;
+}
+.row {
+  width: 80%;
+  margin: auto;
+}
+.nav__heading {
+  font-family: Poppins;
+  color: #000000;
+  margin-left: -80px;
+}
+.nav__heading span{
+  color: #000AFF;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+.navbar .main-menu {
+  display: flex;
+}
+.main-menu{
+  margin-right: -100px;
+  
+}
+.demo{
+  border: 1px solid #000AFF;
+  padding: 2px 20px;
+  border-radius:10px ;
+  color: #000AFF;
+}
+.demo-logo{
+  color: #000AFF;
+  margin-left: 5px;
+  transform: translate(20%, 15%);
+}
+
+.main-menu .list-items  {
+  display: inline-block;
+  margin: 0px 40px;
+  font-family: Roboto;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #252525;
+    transition: 0.5s all ease;
+    /* visibility: hidden; */
     display: none;
-  }
-  .section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background: url(https://i.postimg.cc/vZrkVwB5/joe-woods-4-Zaq5x-Y5-M-c-unsplash.jpg)
-      no-repeat center center/cover;
+    transform: translateX(-800px);
+    padding-top: 60px;
   }
-  
-  .row-content h2 {
-    font-size: 2rem;
+.nav__heading{
+  margin-left: 0;
+  text-align: center;
+}
+  .main-menu.show {
+    transform: translateX(0px);
+    transition: 0.5s all ease;
+  }
+  .main-menu .list-items  {
     margin-bottom: 10px;
-    text-align: center;
+    display: block;
   }
-  .row-content p {
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.6;
+  .menu-btn {
+    display: block;
+    position: absolute;
+    color: black;
+    top: 10px;
+    right: 30px;
+    font-size: 2rem;
   }
-  
-  @media screen and (max-width: 768px) {
-    .main-menu {
-      position: absolute;
-      top: 50px;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      flex-direction: column;
-      background-color: #252525;
-      transition: 0.5s all ease;
-      /* visibility: hidden; */
-      display: none;
-      align-items: center;
-      transform: translateX(-800px);
-      padding-top: 60px;
-    }
-  
-    .main-menu.show {
-      transform: translateX(0px);
-      transition: 0.5s all ease;
-    }
-    .main-menu li a {
-      margin-bottom: 10px;
-      display: block;
-    }
-    .menu-btn {
-      display: block;
-      position: absolute;
-      color: white;
-      top: 10px;
-      right: 30px;
-      font-size: 2rem;
-    }
-  }
-  
+}
