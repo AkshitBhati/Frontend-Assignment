@@ -4,6 +4,7 @@ import "./Signup.css"
 
 const Signup = () => {
   return (
+    <div className='signUp__wrapper'>
     <div className='signUp'>
         <h1 className='signUp__heading'>Sign Up</h1>
         <p className='signUp__message'>Already a member? <span>Login</span></p>
@@ -48,6 +49,7 @@ const Signup = () => {
         </form>
 
         <p className='signIn__conditions'>By Signing up, you agree our <span>Terms and Condition</span></p>
+    </div>
     </div>
   )
 }

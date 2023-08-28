@@ -4,6 +4,7 @@ import "./PersonalDetails.css"
 
 const PersonalDetails = () => {
   return (
+    <div className="pdetails__wrapper">
     <div className='pdetails'>
         <h1 className='pdetails__heading'>Personal Details</h1>
         <p className='pdetails__message'>We need a few more details to complete the sign up process</p>
@@ -61,6 +62,7 @@ const PersonalDetails = () => {
             <p>Continue with Linkedin</p>
             </div>
             <p className='pdetails__conditions'>By Signing up, you agree our <span>Terms and Condition</span></p>
+    </div>
     </div>
   )
 }

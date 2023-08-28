@@ -8,6 +8,7 @@ import { PiLinkedinLogo } from "react-icons/pi"
 const SignIn = () => {
   
   return (
+    <div className="signIn__wrapper">
     <div className='signIn'>
         <h1 className='signIn__heading'>Sign in</h1>
         <p className='signIn__message'>New to LeanPrep? <span>Signup</span></p>
@@ -37,6 +38,7 @@ const SignIn = () => {
             
         </form>
         <p className='signIn__conditions'>By Signing up, you agree our <span>Terms and Condition</span></p>
+    </div>
     </div>
   )
 }

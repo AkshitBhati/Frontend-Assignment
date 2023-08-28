@@ -1,13 +1,16 @@
-body{
-    background: #F0F1FF;
+.pdetails__wrapper{
     height: 120vh;
+    width: 100%;
+    background-color:  #F0F1FF;
+    position: relative;
 }
 
 .pdetails{
+    position: absolute;
+    top: 20px;
+    left: 34%;
     border: 1px solid #fff;
     width: 32%;
-    margin: auto;
-    margin-top: 10px;
     background-color: #fff;
     border-radius: 10px;
     font-family: Roboto;
@@ -106,20 +109,20 @@ body{
 @media (max-width:600px){
     .pdetails{
         width: 90%;
-        margin-top: 20px;
+       left: 5.5%;
     }
     
 }
 @media (min-width: 600px) and (max-width: 800px) {
     .pdetails{
         width: 60%;
-        margin-top: 20px;
+        left: 20%;
     }
 }
 
 @media (min-width: 800px) and (max-width: 1000px) {
     .pdetails{
         width: 50%;
-        margin-top: 20px;
+    left: 25%;
     }
 }
